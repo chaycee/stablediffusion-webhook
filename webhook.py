@@ -2,7 +2,7 @@ import os
 import time
 import requests
 
-DISCORD_WEBHOOK_URL = "" #Webhook here
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1103419314306044017/iggkVqC2nGHkvfHOAuDOTrWD9fxX76TCQXMZte-_p_grsRUawWj_jzjbYZeAY3ni477L" #Webhook here
 IMAGES_PARENT_FOLDER = "stable-diffusion-webui/outputs/txt2img-images" #Parent folder here (txt2img-images)
 IMAGE_FILE_EXT = (".jpg", ".jpeg", ".png")
 TXT_FILE_EXT = (".txt",)
