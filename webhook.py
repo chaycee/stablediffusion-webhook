@@ -1,6 +1,13 @@
 import os
 import time
 import requests
+import subprocess
+
+try:
+    import discord_webhook
+except ImportError:
+    subprocess.check_call(["python", "-m", "pip", "install", "discord-webhook"])
+    import discord_webhook
 
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1103419314306044017/iggkVqC2nGHkvfHOAuDOTrWD9fxX76TCQXMZte-_p_grsRUawWj_jzjbYZeAY3ni477L" #Webhook here
 IMAGES_PARENT_FOLDER = "stable-diffusion-webui/outputs/txt2img-images" #Parent folder here (txt2img-images)
